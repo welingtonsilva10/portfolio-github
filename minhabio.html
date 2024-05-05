@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bio.css">
+    <script src="bio.js" defer></script>
+    <title>Welington Silva</title>
+    <style>
+        @media screen and (min-width: 600px){
+            
+        }
+        @media screen and (max-width: 600px){
+            
+        }
+        .portfolio{
+            width: 80%;
+            height: 90%;
+            border: 1px solid rgba(255, 255, 255, 0.205);
+            background-color: rgba(0, 0, 0, 0.363);
+            border-radius: 16px;
+            box-shadow: 0px 6px 16px rgb(114, 24, 224);
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <canvas class="visualEffects" id="canvasEffects"></canvas>
+    <header>
+        <h2 class="titlePage">
+            Welington Silva Developer
+        </h2>
+        <nav class="navigationMenu">
+            <button class="linksMenu" onclick="callHome()">Home</button>
+            <button class="linksMenu" onclick="callPortfolio()">Projects</button>
+            <button class="linksMenu" onclick="callContacts()">Contacts</button>
+        </nav>
+    </header>
+    <main>
+        <section class="presentation" id="presentation">
+            <div class="imageUser">
+                <img class="myImage" src="myPhoto.svg" alt="">
+            </div>
+            <div class="presentationText">
+                <h2 class="titlePresentation">About me</h2>
+                <p class="textPresentation">
+                    Hi, I'm Welington, software developer. It's a pleasure to welcome you to my portfolio. Here, you can find out more about me and explore the projects I've worked on. I'm excited to share my passion for software development and the experiences I've gained throughout my professional journey. Feel free to browse and learn a little more about my work. If you have any questions or would like to discuss a project, I am happy to help. Thanks for visiting!
+                </p>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="networks">
+                <h2 class="titleNetworks">Social Network</h2>
+                <div class="networkBox">
+                    <img class="imageBox" src="Instagram.svg" alt="Instagram soon">
+                    <a class="textContacts" href="">Instagram</a>
+                </div>
+                <div class="networkBox">
+                    <img class="imageBox" src="GitHub.svg" alt="Github soon">
+                    <a class="textContacts" href="">Github</a>
+                </div>
+                <div class="networkBox">
+                    <img class="imageBox" src="Email.svg" alt="Mail soon">
+                    <a class="textContacts" href="">Email</a>
+                </div>
+            </div>
+            <div class="otherInfos">
+                <h2 class="titleNetworks">Payment Methods</h2>
+                <div class="networkBox">
+                    <img class="imageBox" src="PayPal.svg" alt="Paypal soon">
+                    <button class="buttonPayment">PayPal</button>
+                </div>
+                <div class="networkBox">
+                    <img class="imageBox" src="Pix.svg" alt="Pix soon">
+                    <button class="buttonPayment">Pix</button>
+                </div>
+            </div>
+            <div class="workTools">
+                <h2 class="titleNetworks">Work Tools</h2>
+                <div class="networkBox">
+                    <img class="imageBox" src="Jira.svg" alt="Paypal soon">
+                    <button class="buttonPayment">Jira</button>
+                </div>
+                <div class="networkBox">
+                    <img class="imageBox" src="Figma.svg" alt="Pix soon">
+                    <button class="buttonPayment">Figma</button>
+                </div>
+                <div class="networkBox">
+                    <img class="imageBox" src="Spellcheck.svg" alt="Pix soon">
+                    <button class="buttonPayment">Autentique</button>
+                </div>
+                <div class="networkBox">
+                    <img class="imageBox" src="VisualStudio.svg" alt="Pix soon">
+                    <button class="buttonPayment">Visual Studio</button>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="projectModel">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="textFooter">Developed by Welington Silva © 2024</p>
+    </footer>
+</body>
+<script>
+    let presentation = document.getElementById('presentation');
+    let contacts = document.getElementById('contacts');
+    let portfolio = document.getElementById('portfolio');
+    presentation.style.display  = 'none';
+    contacts.style.display  = 'none';
+    function callContacts() {
+        contacts.style.display = 'flex';
+        presentation.style.display = 'none'
+        portfolio.style.display = 'none'
+    }
+    function callHome() {
+        presentation.style.display = 'flex'
+        contacts.style.display = 'none';
+        portfolio.style.display = 'none';
+    }
+    function callPortfolio() {
+        presentation.style.display = 'none'
+        contacts.style.display = 'none';
+        portfolio.style.display = 'flex';
+    }
+
+</script>
+</html>
