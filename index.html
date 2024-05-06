@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bio.css">
-    <script src="bio.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/bio.css">
+    <script src="assets/scripts/bio.js" defer></script>
     <title>Welington Silva</title>
     <style>
         @media screen and (min-width: 600px){
@@ -45,7 +45,7 @@
     <main>
         <section class="presentation" id="presentation">
             <div class="imageUser">
-                <img class="myImage" src="myPhoto.svg" alt="">
+                <img class="myImage" src="assets/images/myPhoto.svg" alt="">
             </div>
             <div class="presentationText">
                 <h2 class="titlePresentation">About me</h2>
@@ -58,46 +58,46 @@
             <div class="networks">
                 <h2 class="titleNetworks">Social Network</h2>
                 <div class="networkBox">
-                    <img class="imageBox" src="Instagram.svg" alt="Instagram soon">
-                    <a class="textContacts" href="">Instagram</a>
+                    <img class="imageBox" src="assets/images/Instagram.svg" alt="Instagram soon" >
+                    <a class="textContacts" href="" translate="no">Instagram</a>
                 </div>
                 <div class="networkBox">
-                    <img class="imageBox" src="GitHub.svg" alt="Github soon">
-                    <a class="textContacts" href="">Github</a>
+                    <img class="imageBox" src="assets/images/GitHub.svg" alt="Github soon" >
+                    <a class="textContacts" href="" translate="no">Github</a>
                 </div>
                 <div class="networkBox">
-                    <img class="imageBox" src="Email.svg" alt="Mail soon">
-                    <a class="textContacts" href="">Email</a>
+                    <img class="imageBox" src="assets/images/Email.svg" alt="Mail soon" >
+                    <a class="textContacts" href="" translate="no">Email</a>
                 </div>
             </div>
             <div class="otherInfos">
                 <h2 class="titleNetworks">Payment Methods</h2>
                 <div class="networkBox">
-                    <img class="imageBox" src="PayPal.svg" alt="Paypal soon">
-                    <button class="buttonPayment">PayPal</button>
+                    <img class="imageBox" src="assets/images/PayPal.svg" alt="Paypal soon" >
+                    <button class="buttonPayment" translate="no">PayPal</button>
                 </div>
                 <div class="networkBox">
-                    <img class="imageBox" src="Pix.svg" alt="Pix soon">
-                    <button class="buttonPayment">Pix</button>
+                    <img class="imageBox" src="assets/images/Pix.svg" alt="Pix soon" >
+                    <button class="buttonPayment" translate="no">Pix</button>
                 </div>
             </div>
             <div class="workTools">
                 <h2 class="titleNetworks">Work Tools</h2>
                 <div class="networkBox">
-                    <img class="imageBox" src="Jira.svg" alt="Paypal soon">
-                    <button class="buttonPayment">Jira</button>
+                    <img class="imageBox" src="assets/images/Jira.svg" alt="Paypal soon" >
+                    <button class="buttonPayment" translate="no">Jira</button>
                 </div>
                 <div class="networkBox">
-                    <img class="imageBox" src="Figma.svg" alt="Pix soon">
-                    <button class="buttonPayment">Figma</button>
+                    <img class="imageBox" src="assets/images/Figma.svg" alt="Pix soon" >
+                    <button class="buttonPayment" translate="no">Figma</button>
                 </div>
                 <div class="networkBox">
-                    <img class="imageBox" src="Spellcheck.svg" alt="Pix soon">
-                    <button class="buttonPayment">Autentique</button>
+                    <img class="imageBox" src="assets/images/Spellcheck.svg" alt="Pix soon" >
+                    <button class="buttonPayment" translate="no">Autentique</button>
                 </div>
                 <div class="networkBox">
-                    <img class="imageBox" src="VisualStudio.svg" alt="Pix soon">
-                    <button class="buttonPayment">Visual Studio</button>
+                    <img class="imageBox" src="assets/images/VisualStudio.svg" alt="Pix soon" >
+                    <button class="buttonPayment" translate="no">Visual Studio</button>
                 </div>
             </div>
         </section>
@@ -115,7 +115,7 @@
     let presentation = document.getElementById('presentation');
     let contacts = document.getElementById('contacts');
     let portfolio = document.getElementById('portfolio');
-    presentation.style.display  = 'none';
+    portfolio.style.display  = 'none';
     contacts.style.display  = 'none';
     function callContacts() {
         contacts.style.display = 'flex';
